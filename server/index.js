@@ -1,3 +1,5 @@
+// @flow
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const low = require('lowdb');
@@ -10,9 +12,12 @@ const db = low(adapter);
 
 db.defaults({ transactions: [] }).write();
 
-const app = express();
+let app = express();
 
-app.db = db;
+app = {
+  ...app,
+  db,
+};
 
 app.use(
   bodyParser.urlencoded({

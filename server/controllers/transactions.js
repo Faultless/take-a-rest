@@ -1,15 +1,17 @@
+// @flow
+
 const uuid = require('uuid/v1');
 const Model = require('../models/transaction');
 
-const transactions = (senderId, receiverId, amount) => {
-  const newTransaction = new Model(
-    uuid(),
+const transactions = (senderId: number, receiverId: number, amount: number): Model => {
+  const newTransaction = new Model({
+    id: uuid(),
     senderId,
     receiverId,
-    parseInt(amount, 10),
-    'transfer',
-    'fetching',
-  );
+    amount: parseInt(amount, 10),
+    type: 'transfer',
+    status: 'fetching',
+  });
   return newTransaction;
 };
 

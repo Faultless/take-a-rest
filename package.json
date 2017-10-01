@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --ext .js,.jsx --exec babel-node server/index.js"
   },
   "keywords": [],
   "author": "",
@@ -19,10 +19,16 @@
     "uuid": "^3.1.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-preset-flow": "^6.23.0",
     "eslint": "^4.3.0",
     "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-flowtype": "^2.37.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.1.0"
+    "eslint-plugin-react": "^7.1.0",
+    "flow-bin": "^0.56.0",
+    "nodemon": "^1.12.1"
   }
 }

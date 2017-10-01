@@ -1,3 +1,5 @@
+// @flow
+
 const Router = require('express').Router;
 const Model = require('../../models/character');
 
@@ -33,7 +35,7 @@ character
     const characterId = parseInt(req.params.id, 10);
 
     try {
-      const requestedCharacter = req.app.db
+      const requestedCharacter: Object = req.app.db
         .get('characters')
         .find({ id: characterId })
         .value();
