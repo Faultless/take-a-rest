@@ -12,12 +12,9 @@ const db = low(adapter);
 
 db.defaults({ transactions: [] }).write();
 
-let app = express();
+const app = express();
 
-app = {
-  ...app,
-  db,
-};
+app.db = db;
 
 app.use(
   bodyParser.urlencoded({

@@ -64,6 +64,25 @@ character
       .status(200)
       .json({ character: requestedCharacter })
       .end();
+  })
+  .delete((req, res) => {
+    const characterId = parseInt(req.params.id, 10);
+    try {
+      req.app.db
+        .get('characters')
+        .remove({ id: characterId })
+        .write();
+    } catch (error) {
+      res
+        .status(404)
+        .json({ message: error.message })
+        .end();
+    }
+
+    res
+      .status(200)
+      .json({ message: `character ${characterId} deleted.` })
+      .end();
   });
 
 module.exports = character;
