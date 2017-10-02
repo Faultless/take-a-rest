@@ -1,4 +1,4 @@
-// flow-typed signature: ef1bde4b46d4617e03b065a6030d298c
+// flow-typed signature: f0fc37e9095b86b2df0a98aff3ef8b7e
 // flow-typed version: <<STUB>>/eslint_v^4.3.0/flow_v0.56.0
 
 /**
@@ -214,7 +214,7 @@ declare module 'eslint/lib/options' {
   declare module.exports: any;
 }
 
-declare module 'eslint/lib/rule-context' {
+declare module 'eslint/lib/report-translator' {
   declare module.exports: any;
 }
 
@@ -355,6 +355,10 @@ declare module 'eslint/lib/rules/func-names' {
 }
 
 declare module 'eslint/lib/rules/func-style' {
+  declare module.exports: any;
+}
+
+declare module 'eslint/lib/rules/function-paren-newline' {
   declare module.exports: any;
 }
 
@@ -1234,10 +1238,6 @@ declare module 'eslint/lib/rules/yoda' {
   declare module.exports: any;
 }
 
-declare module 'eslint/lib/testers/event-generator-tester' {
-  declare module.exports: any;
-}
-
 declare module 'eslint/lib/testers/rule-tester' {
   declare module.exports: any;
 }
@@ -1299,6 +1299,10 @@ declare module 'eslint/lib/token-store/utils' {
 }
 
 declare module 'eslint/lib/util/ajv' {
+  declare module.exports: any;
+}
+
+declare module 'eslint/lib/util/apply-disable-directives' {
   declare module.exports: any;
 }
 
@@ -1511,8 +1515,8 @@ declare module 'eslint/lib/logging.js' {
 declare module 'eslint/lib/options.js' {
   declare module.exports: $Exports<'eslint/lib/options'>;
 }
-declare module 'eslint/lib/rule-context.js' {
-  declare module.exports: $Exports<'eslint/lib/rule-context'>;
+declare module 'eslint/lib/report-translator.js' {
+  declare module.exports: $Exports<'eslint/lib/report-translator'>;
 }
 declare module 'eslint/lib/rules.js' {
   declare module.exports: $Exports<'eslint/lib/rules'>;
@@ -1618,6 +1622,9 @@ declare module 'eslint/lib/rules/func-names.js' {
 }
 declare module 'eslint/lib/rules/func-style.js' {
   declare module.exports: $Exports<'eslint/lib/rules/func-style'>;
+}
+declare module 'eslint/lib/rules/function-paren-newline.js' {
+  declare module.exports: $Exports<'eslint/lib/rules/function-paren-newline'>;
 }
 declare module 'eslint/lib/rules/generator-star-spacing.js' {
   declare module.exports: $Exports<'eslint/lib/rules/generator-star-spacing'>;
@@ -2276,9 +2283,6 @@ declare module 'eslint/lib/rules/yield-star-spacing.js' {
 declare module 'eslint/lib/rules/yoda.js' {
   declare module.exports: $Exports<'eslint/lib/rules/yoda'>;
 }
-declare module 'eslint/lib/testers/event-generator-tester.js' {
-  declare module.exports: $Exports<'eslint/lib/testers/event-generator-tester'>;
-}
 declare module 'eslint/lib/testers/rule-tester.js' {
   declare module.exports: $Exports<'eslint/lib/testers/rule-tester'>;
 }
@@ -2326,6 +2330,9 @@ declare module 'eslint/lib/token-store/utils.js' {
 }
 declare module 'eslint/lib/util/ajv.js' {
   declare module.exports: $Exports<'eslint/lib/util/ajv'>;
+}
+declare module 'eslint/lib/util/apply-disable-directives.js' {
+  declare module.exports: $Exports<'eslint/lib/util/apply-disable-directives'>;
 }
 declare module 'eslint/lib/util/fix-tracker.js' {
   declare module.exports: $Exports<'eslint/lib/util/fix-tracker'>;

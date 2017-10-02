@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1506956417482" clover="3.2.0">
+  <project timestamp="1506956417482" name="All files">
+    <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="3" methods="7" coveredmethods="7" elements="31" coveredelements="30" complexity="0" loc="20" ncloc="20" packages="2" files="2" classes="2">
+      <package name="config">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="index.js" path="D:\Repos\take-a-rest\client\config\index.js">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+        </file>
+      </package>
+      <package name="util">
+        <metrics statements="18" coveredstatements="18" conditionals="4" coveredconditionals="3" methods="7" coveredmethods="7"/>
+        <file name="index.js" path="D:\Repos\take-a-rest\client\util\index.js">
+          <metrics statements="18" coveredstatements="18" conditionals="4" coveredconditionals="3" methods="7" coveredmethods="7"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="3" count="4" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="7" count="4" type="stmt"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="11" count="2" type="stmt"/>
+          <line num="13" count="4" type="stmt"/>
+          <line num="15" count="4" type="cond" truecount="1" falsecount="1"/>
+          <line num="17" count="2" type="stmt"/>
+          <line num="18" count="4" type="stmt"/>
+          <line num="19" count="4" type="stmt"/>
+          <line num="20" count="4" type="stmt"/>
+          <line num="21" count="6" type="cond" truecount="2" falsecount="0"/>
+          <line num="22" count="4" type="stmt"/>
+          <line num="24" count="2" type="stmt"/>
+          <line num="27" count="4" type="stmt"/>
+          <line num="30" count="4" type="stmt"/>
+          <line num="32" count="2" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CRUD operations for a single character should fail to fetch a user by his ID 1`] = `
+Object {
+  "error": "Bad Request.",
+}
+`;
+
+exports[`CRUD operations for a single character should fetch a user by his ID 1`] = `
+Object {
+  "description": "",
+  "id": 1,
+  "image": "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg?apikey=498749143bba8e7a297a3589548ed657",
+  "name": "3-D Man",
+  "rating": 4,
+}
+`;

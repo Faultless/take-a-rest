@@ -14,9 +14,7 @@
  */
 
 declare module 'lowdb' {
-  declare module.exports: {
-    (adapter: string): Object,
-  };
+  declare module.exports: any;
 }
 
 /**

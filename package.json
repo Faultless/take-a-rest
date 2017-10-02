@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --ext .js,.jsx --exec babel-node server/index.js"
+    "client:start": "node client",
+    "server:start": "nodemon --ext .js,.jsx --exec babel-node server/index.js",
+    "test": "jest --watch --coverage"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.16.2",
     "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
     "express": "^4.15.5",
     "jest": "^21.2.1",
     "lowdb": "^1.0.0",
