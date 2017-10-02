@@ -19,10 +19,22 @@ app.db = db;
 app.use(
   bodyParser.urlencoded({
     type: 'application/x-www-form-urlencoded',
-    extended: false,
+    extended: true,
   }),
 );
 app.use(bodyParser.json({ type: 'application/json' }));
+
+app.use((req, res, next) => {
+  const validType = req.accepts('application/x-www-form-urlencoded', 'application/json');
+  res.header({ 'Content-Type': 'application/json' });
+  if (validType === undefined) {
+    res
+      .status(406)
+      .json({ reason: 'Please send proper JSON data' })
+      .end();
+  }
+  next();
+});
 
 app.use('/api', api);
 

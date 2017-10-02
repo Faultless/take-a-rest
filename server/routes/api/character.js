@@ -2,6 +2,7 @@
 
 const Router = require('express').Router;
 const Model = require('../../models/character');
+const { DuplicateCharacterException, InvalidIdentifierException } = require('../../util/errors');
 
 const character = Router();
 
@@ -15,7 +16,7 @@ character.route('/').post((req, res) => {
         .findIndex({ id: newCharacter.id })
         .value() !== -1
     ) {
-      throw new Error('Duplicate character Ids');
+      throw new DuplicateCharacterException();
     }
 
     req.app.db
@@ -40,7 +41,7 @@ character
         .find({ id: characterId })
         .value();
 
-      if (!requestedCharacter) throw new Error('Invalid character ID');
+      if (!requestedCharacter) throw new InvalidIdentifierException();
 
       res
         .status(200)

@@ -1,9 +1,6 @@
 const Router = require('express').Router;
 const CreateTransaction = require('../../controllers/transactions');
-const { HOST, PORT } = require('../../config');
-
-// const LIFE_DRAIN = 1;
-// const DAMAGE = 2;
+const { HOST, PORT, TYPES } = require('../../config');
 
 const transactions = Router();
 
